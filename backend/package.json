@@ -1,21 +1,15 @@
 {
-  "type": "commonjs",
   "name": "backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "1.0.50",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "dev": "bun run --watch src/index.ts"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "body-parser": "^2.2.1",
-    "cors": "^2.8.5",
-    "express": "^5.1.0",
-    "sqlite": "^5.1.1",
-    "sqlite3": "^5.1.7"
-  }
+    "elysia": "latest"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "module": "src/index.js"
 }
